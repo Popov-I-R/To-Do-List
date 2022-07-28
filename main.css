@@ -102,3 +102,28 @@ h4 {
     cursor: pointer;
 }
 
+/* Тук чистим отметките на бутоните radio and check buttons */
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Създаваме нови отметки за бутоните radio and check buttons */
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--business);
+    box-shadow: var(--business-glow);
+
+}
+
+/* Ако е personal да е с различен glow */
+.bubble.personal {
+    border-color: var(--personal);
+    box-shadow: var(--personal-glow);
+}
