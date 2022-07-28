@@ -2,6 +2,7 @@
     --primary: #EA40A4;
     --business: #3a82ee;
     --personal: var(--primary);
+    --grey: #aaa;
     --light: #EEE;
     --dark: #313154;
     --danger: #ff5b57;
@@ -38,3 +39,46 @@ section {
     padding-right: 1.5rem;
 }
 
+h3 {
+   color: var(--dark);
+   font-size: 1rem;
+   font-weight: 400;
+   margin-bottom: 0.5rem;
+    
+}
+
+h4 {
+   color: var(--grey); 
+   font-size: 0.875rem;
+   font-weight: 700;
+   margin-bottom: 0.5rem;  
+}
+
+.greeting .title {
+    display: flex;
+}
+
+.greeting .title input {
+    margin-left: 0.5rem;
+    flex: 1 1 0%;
+    min-width: 0;
+}
+
+.greeting .title,
+.greeting .title input {
+    color: var(--dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.create-todo input[type="text"] {
+    display: block;
+    width: 100%;
+    font-size: 1.125rem;
+    padding: 1rem 1.5rem;
+    color: var(--dark);
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 1.5rem;
+}
